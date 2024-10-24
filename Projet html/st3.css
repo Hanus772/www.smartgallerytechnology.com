@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff0000, #ff8c00); /* Red to Orange Gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container for the entire card */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(231, 204, 204);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section with the logo */
+.header {
+    background-color: #ff0000;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Information */
+.contact-info {
+    font-size: 16px;
+    text-align: left; /* Aligns all text to the left */
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Keeps the title centered */
+}
+
+.contact-info p {
+    margin: 10px 0; /* Original margin */
+    color: #555;
+}
+
+/* Add space between contact info items */
+.contact-info p {
+    margin-bottom: 15px; /* Adjust the space between items */
+}
+
+/* Email and Address should have space below them */
+.contact-info p:last-child {
+    margin-bottom: 0; /* Remove the bottom margin from the last item */
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Title */
+.section-title {
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Social Media Section */
+.social-media {
+    background-color: #ff69b4; /* Pink background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px; /* Optional: Add a slight border radius */
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #00c853;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00b347;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .contact-info, .social-media, .whatsapp-button {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
